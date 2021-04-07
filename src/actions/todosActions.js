@@ -7,7 +7,7 @@ import {
 } from '../helpers/localStorage';
 
 export const addTodo = todo => {
-	if (todo.text.length > 50) todo.text = todo.text.slice(0, 30) + '...';
+	if (todo.text.length > 50) todo.text = todo.text.slice(0, 50) + '...';
 
 	addTodoStorage(todo);
 
